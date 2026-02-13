@@ -1,0 +1,11 @@
+Multi-Factor Authentication (MFA) adds an extra layer of security by
+requiring users to verify their identity using multiple methods.
+
+Examples: - Password + OTP - Password + mobile notification - Password +
+biometric verification
+
+MFA significantly reduces the risk of: - Brute force attacks -
+Credential stuffing - Account takeovers
+
+Organizations should enforce MFA for: - Admin accounts - Remote logins -
+Sensitive systems

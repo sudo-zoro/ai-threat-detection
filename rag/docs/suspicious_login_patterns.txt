@@ -1,0 +1,11 @@
+Suspicious login behavior includes unusual patterns that may indicate an
+attack or compromised credentials.
+
+Common suspicious signals: - Login at odd hours (late night / early
+morning) - Login from a new country - Login from multiple locations
+within a short time - Sudden increase in failed login attempts
+
+These behaviors may indicate: - Brute force attacks - Credential
+stuffing - Compromised accounts - Bot-driven login attempts
+
+Security teams should monitor and investigate such anomalies quickly.

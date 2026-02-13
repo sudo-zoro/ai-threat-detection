@@ -1,0 +1,13 @@
+Account takeover occurs when an attacker gains unauthorized access to a
+user account.
+
+This may happen through phishing, credential stuffing, brute force, or
+malware.
+
+Common indicators: - Login from a new country or device - Sudden
+password change - Suspicious activity after login - Access at unusual
+times
+
+Mitigation techniques: - Notify users of new device logins - Require MFA
+for sensitive actions - Monitor geographic anomalies - Detect unusual
+user behavior patterns

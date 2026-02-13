@@ -1,0 +1,13 @@
+Brute force attacks involve repeated login attempts using many password
+combinations to gain unauthorized access to user accounts.
+
+Attackers may use automated tools to try thousands of passwords per
+minute. These attacks often result in a high number of failed login
+attempts.
+
+Common indicators: - Multiple failed login attempts in a short time -
+Login attempts from unusual locations - Attempts during late night hours
+
+Mitigation techniques: - Enable Multi-Factor Authentication (MFA) - Rate
+limit login attempts - Account lockout after repeated failures - CAPTCHA
+verification - IP blocking and monitoring

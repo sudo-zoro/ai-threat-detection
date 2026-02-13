@@ -1,0 +1,11 @@
+Rate limiting controls how many login attempts can be made within a time
+period.
+
+It helps prevent automated attacks like brute force and password
+spraying.
+
+Best practices: - Limit login attempts per minute - Temporarily block IP
+after repeated failures - Introduce CAPTCHA after multiple attempts -
+Monitor login attempt patterns
+
+Rate limiting is a key defense mechanism against automated attacks.
