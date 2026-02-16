@@ -184,6 +184,67 @@ This will:
 
 ---
 
+## 🚀 API Usage
+
+### Start the API
+
+```bash
+uvicorn app:app --reload
+```
+
+### Analyze a Single Login
+
+```bash
+curl -X POST http://127.0.0.1:8000/analyze-login \
+  -H "Content-Type: application/json" \
+  -d '{
+    "user":"bob",
+    "country":"Russia",
+    "device":"Laptop",
+    "hour":2,
+    "failed_attempts":42
+  }'
+```
+
+### Analyze Login Logs (Batch)
+
+This endpoint reads from `data/login_logs.csv` and does not require raw event payloads.
+
+```bash
+curl -X POST "http://127.0.0.1:8000/analyze-logs?limit=10"
+```
+
+Skip LLM/RAG (faster):
+
+```bash
+curl -X POST "http://127.0.0.1:8000/analyze-logs?limit=10&explain=false"
+```
+
+Filter by minimum failed attempts:
+
+```bash
+curl -X POST "http://127.0.0.1:8000/analyze-logs?limit=10&min_failed_attempts=20"
+```
+
+---
+
+## 🧠 Caching (Optional)
+
+By default, the API uses an in-memory cache for LLM responses. For multi-worker or multi-user setups, you can use Redis.
+
+### In-memory (default)
+
+No extra config required.
+
+### Redis
+
+```bash
+export REDIS_URL="redis://localhost:6379/0"
+export CACHE_TTL_SECONDS=3600
+```
+
+---
+
 ## 🧾 Example Output
 
 ```
