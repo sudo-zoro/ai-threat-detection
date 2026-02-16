@@ -5,3 +5,6 @@ joblib
 ollama
 chromadb
 sentence-transformers
+fastapi
+uvicorn
+redis
